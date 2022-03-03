@@ -1,6 +1,6 @@
 from tkinter import *
 import random
-
+from tkinter import messagebox
 
 root = Tk()
 
@@ -51,8 +51,8 @@ def subaru():
         lbl_try.config(text=num)
         lbl_rigth = Label(root, text='Correct', background='black', foreground='pink', font=('Arial 13 bold'))
         lbl_rigth.grid(column=0, row=7)
-        
-
+        messagebox.showinfo("showinfo", "Correct")
+        root.destroy()
 
 
 def randomize():
